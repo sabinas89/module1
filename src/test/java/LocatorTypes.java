@@ -20,7 +20,7 @@ public class LocatorTypes {
         System.setProperty("webdriver.chrome.driver",System.getenv("SE_HOME")+"/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.get("http://demo-store.seleniumacademy.com/");
     }
 
